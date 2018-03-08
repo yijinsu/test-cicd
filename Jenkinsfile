@@ -11,6 +11,13 @@ pipeline {
                 sh 'mvn -B -DskipTests clean package'
             }
         }
+
+        stage('Test with JaCoCo') {
+                    steps {
+                        sh 'test jacoco:report'
+                    }
+
+                }
     }
 }
 
