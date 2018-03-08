@@ -20,7 +20,7 @@ pipeline {
                 }
          stage('SonarQube Analysis') {
                              steps {
-                                 sh 'mvn sonar:sonar -Dsonar.host.url=http://192.168.99.100:9000 -Dsonar.login=54ff0fbaa83de0c840dddd0716871808807e5bfd'
+                                 sh 'mvn sonar:sonar -Dsonar.host.url=http://tbmstoreapp1.qa1.iad2.xaxis.net:8082 -Dsonar.login=2735250784ddff4fc125f2e04a1549ebf1503d69'
                              }
 
                          }
