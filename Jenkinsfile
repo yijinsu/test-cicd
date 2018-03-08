@@ -18,6 +18,12 @@ pipeline {
                     }
 
                 }
+         stage('SonarQube Analysis') {
+                             steps {
+                                 sh 'mvn sonar:sonar -Dsonar.host.url=http://192.168.99.100:9000 -Dsonar.login=54ff0fbaa83de0c840dddd0716871808807e5bfd'
+                             }
+
+                         }
     }
 }
 
