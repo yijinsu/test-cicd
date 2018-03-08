@@ -14,7 +14,7 @@ pipeline {
 
         stage('Test with JaCoCo') {
                     steps {
-                        sh 'test jacoco:report'
+                        sh 'mvn test jacoco:report'
                     }
 
                 }
